@@ -1,22 +1,22 @@
-#Triangle Challenge
+# Triangle Challenge
 
 This is a Triangle challenge implementation developed as a step in the interview process for TradeShift.
 
-##**Problem to be solved: **
+## ** Problem to be solved: **
 
 Write a program that will determine the type of a triangle. It should take the lengths of the triangle's three sides as input, and return whether the triangle is equilateral, isosceles or scalene.
 
-##**Considerations to be taken into account: **
+## ** Considerations to be taken into account: **
 
-> Shall have a good testing set
-> Code readability/maintainability will be checked.
-> The code should be easy to escalate into a ore complex domain 
+* Shall have a good testing set
+* Code readability/maintainability will be checked.
+* The code should be easy to escalate into a ore complex domain 
 
-##**Assumptions: **
-> The input will be received from the command line, however it shall be easy to use from other inputs (swing, rest, externall calls)
-> The application run as a stand alone call
+## ** Assumptions: **
+* The input will be received from the command line, however it shall be easy to use from other inputs (swing, rest, externall calls)
+* The application run as a stand alone call
 
-##**Design explanation: **
+## ** Design explanation: **
 
 1. The test has been implemented using TDD, therefore most of the actual "business" code is tested
 
@@ -45,6 +45,6 @@ Write a program that will determine the type of a triangle. It should take the l
 	* Maven
 	
 	
-###**Developer:**
+### ** Developer: **
 Edgar Fabian Garcia Hernandez
 edguitar000@gmail.com
