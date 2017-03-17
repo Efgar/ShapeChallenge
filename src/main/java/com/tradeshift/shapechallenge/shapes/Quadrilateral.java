@@ -12,14 +12,12 @@ public class Quadrilateral implements Shape {
 	private double sideC;
 	private double sideD;
 
-	public Quadrilateral(double sideA, double sideB, double sideC, double side4) {
-		if (sideA <= 0 || sideB <= 0 || sideC <= 0 || side4 <= 0) {
-			throw new IllegalArgumentException("One of the received sides is lesser or equal to zero");
-		}
+	public Quadrilateral(double sideA, double sideB, double sideC, double sideD) {
 		this.sideA = sideA;
 		this.sideB = sideB;
 		this.sideC = sideC;
-		this.sideD = side4;
+		this.sideD = sideD;
+		validateShape();
 	}
 
 	public String getType() {
@@ -36,6 +34,19 @@ public class Quadrilateral implements Shape {
 
 	public double getPerimeter() {
 		return sideA + sideB + sideC + sideD;
+	}
+
+	public void validateShape() {
+		if (sideA <= 0 || sideB <= 0 || sideC <= 0 || sideD <= 0) {
+			throw new IllegalArgumentException("One of the received sides is lesser or equal to zero");
+		}
+		
+		if (this.sideA + this.sideB + this.sideC < this.sideD
+				|| this.sideD + this.sideA + this.sideB < this.sideC
+				|| this.sideC + this.sideD + this.sideA < this.sideB
+				|| this.sideB + this.sideC + this.sideD < this.sideA) {
+			throw new IllegalArgumentException("Non valid shape sides");
+		}
 	}
 
 }

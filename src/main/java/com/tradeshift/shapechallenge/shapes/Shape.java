@@ -18,4 +18,10 @@ public interface Shape {
 	 * @return numeric value of the shape lenght
 	 */
 	public double getPerimeter();
+	
+	/**
+	 * Validates the shape is well formed
+	 * @throws runtime 
+	 */
+	public void validateShape();
 }
